@@ -1,4 +1,4 @@
-const CustomLink = ({icon = null, text, href}) => {
+const CustomLink = ({icon = null, text = null, href}) => {
     return (
         <a href={href}>
             {icon}
