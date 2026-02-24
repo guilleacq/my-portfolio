@@ -1,24 +1,25 @@
 import './App.css'
+import TitleSection from './sections/TitleSection.jsx'
+import AboutSection from './sections/AboutSection.jsx'
+import ProjectsSection from './sections/ProjectsSection.jsx'
+import CustomLink from './components/CustomLink.jsx'
+import { FaExternalLinkAlt } from 'react-icons/fa'
 
 function App() {
   return (
     <>
-      <main >
-        {/* title */}
-        <section></section> 
+      {/* title */}
+      <TitleSection 
+        title={"Guillermo Acquistapace"} 
+        description={"this is my little personal spot in the web."}
+      />
 
-        {/* about */}
-        <section></section>
+      <AboutSection />
+      <ProjectsSection />
 
-        {/* my projects */}
-        <section></section>
+      <CustomLink icon={<FaExternalLinkAlt/>} text="my_blog" href={"https://medium.com"} />
 
-        {/* blog */}
-        <section></section>
-
-        {/* contact */}
-
-      </main>
+      {/* contact */}
     </>
   )
 }
