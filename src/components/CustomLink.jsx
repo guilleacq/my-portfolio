@@ -1,6 +1,10 @@
-const CustomLink = ({icon = null, text = null, href}) => {
+const CustomLink = ({icon = null, text = "", href}) => {
     return (
-        <a href={href}>
+        <a 
+            href={href} 
+            className="flex flex-row items-center gap-2 font-medium text-blue-300 hover:underline" 
+            target="_blank" rel="noopener noreferrer"
+        >
             {icon}
             {text}
         </a>

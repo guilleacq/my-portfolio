@@ -1,18 +1,19 @@
-import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaEnvelope, FaExternalLinkAlt } from 'react-icons/fa';
 import CustomLink from '../components/CustomLink';
 
 const links = [
-    { href: "mailto:me@gmail.com", icon: <FaEnvelope /> },
-    { href: "https://github.com/test", icon: <FaGithub /> },
-    { href: "https://linkedin.com/in/test", icon: <FaLinkedin /> },
+    { text:"mail", href: "mailto:me@gmail.com", icon: <FaEnvelope /> },
+    { text:"github", href: "https://github.com/test", icon: <FaGithub /> },
+    { text:"linkedin", href: "https://linkedin.com/in/test", icon: <FaLinkedin /> },
+    { text: "blog", href: "https://medium.com", icon: <FaExternalLinkAlt /> },
 ];
 
 const ContactSection = () => {
     return (
-        <section className="contact-section">
-        {links.map(link => (
-            <CustomLink key={link.href} icon={link.icon} text={link.text} href={link.href} />
-        ))}
+        <section className="flex flex-row items-center gap-4">
+            {links.map(link => (
+                <CustomLink key={link.href} icon={link.icon} text={link.text} href={link.href} />
+            ))}
         </section>
     );
 }
