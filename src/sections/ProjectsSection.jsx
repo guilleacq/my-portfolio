@@ -1,11 +1,11 @@
-import Accordeon from "../components/Accordeon.jsx"
+import TitledSection from "../components/TitledSection.jsx";
 
 const ProjectsSection = () => {
     return (
         <section>
-            <Accordeon title={"my_projects"}>
-                <p>Ses</p>
-            </Accordeon>
+            <TitledSection title={"my_projects"}>
+                
+            </TitledSection>
         </section>
     );
 }

@@ -1,4 +1,4 @@
-import Accordeon from "../components/Accordeon.jsx"
+import TitledSection from "../components/TitledSection";
 
 const text = `Hi! Thank you for stopping by my little website, I'm Guillermo. 
 I have been into computers ever since I was a little kid`
@@ -6,9 +6,9 @@ I have been into computers ever since I was a little kid`
 const AboutSection = () => {
     return (
         <section className="flex mt-8">
-            <Accordeon title={"about_me"}>
-                <p>{text}</p>
-            </Accordeon>
+            <TitledSection title={"about_me"}>
+                <p className="text-stone-300">{text}</p>
+            </TitledSection>
         </section>
     );
 }
