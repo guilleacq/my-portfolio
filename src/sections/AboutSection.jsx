@@ -5,9 +5,9 @@ I have been into computers ever since I was a little kid`
 
 const AboutSection = () => {
     return (
-        <section className="flex mt-8">
-            <TitledSection title={"about_me"}>
-                <p className="text-stone-300">{text}</p>
+        <section>
+            <TitledSection title={"about"}>
+                <p className="text-foreground">{text}</p>
             </TitledSection>
         </section>
     );

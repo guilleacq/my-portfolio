@@ -1,8 +1,8 @@
 const HeroSection = ({title, description}) => {
     return (
         <section className="flex flex-col gap-4">
-            <h1>{title}</h1>
-            <p className="text-stone-400">{description}</p>
+            <h1 className="text-foreground">{title}</h1>
+            <p className="text-muted-foreground">{description}</p>
         </section>
     );
 }

@@ -4,7 +4,7 @@ const ProjectsSection = () => {
     return (
         <section>
             <TitledSection title={"my_projects"}>
-                
+                <p>Ses</p>
             </TitledSection>
         </section>
     );
