@@ -7,24 +7,25 @@ import {
     CardHeader,
     CardTitle,
   } from "@/components/ui/card";
-import CustomLink from "./CustomLink";
 import { Badge } from "./ui/badge";
+
+const tagLimit = 4; 
 
 
 const ProjectCard = ({ title = "", description = "", tags = []}) => {
     return (
-        <Card className={"relative w-full max-w-sm h-50 flex flex-col justify-between"}>
+        <Card className={"relative w-full max-w-sm h-50 flex flex-col justify-between transition-all duration-200 hover:bg-muted"}>
             <CardHeader>
-                <div className="flex justify-between items-center">
+                <div className="flex justify-between items-center mt-2">
                     <CardTitle>{title}</CardTitle>
-                    <span className="text-accent">→</span>
+                    {/* <span className="text-accent">→</span> */}
                 </div>
                 <CardDescription className="mt-2 line-clamp-3">{description}</CardDescription>
             </CardHeader>
 
-            <div className="flex gap-2 px-6 pb-6">
-                {tags.slice(0, 3).map((tag, index) => (
-                    <Badge key={index} variant="outline">{tag}</Badge>
+            <div className="flex gap-2 mx-6 mt-auto">
+                {tags.slice(0, tagLimit).map((tag, index) => (
+                    <Badge key={index} variant="outline" className={"text-accent"}>{tag}</Badge>
                 ))}
             </div>
 

@@ -143,7 +143,7 @@ function CarouselItem({
 
 function CarouselPrevious({
   className,
-  variant = "outline",
+  variant = "ghost",
   size = "icon",
   ...props
 }) {
@@ -154,7 +154,7 @@ function CarouselPrevious({
       data-slot="carousel-previous"
       variant={variant}
       size={size}
-      className={cn("absolute size-8 rounded-full", orientation === "horizontal"
+      className={cn("absolute size-8 rounded-full hover:bg-muted disabled:hidden", orientation === "horizontal"
         ? "top-1/2 -left-12 -translate-y-1/2"
         : "-top-12 left-1/2 -translate-x-1/2 rotate-90", className)}
       disabled={!canScrollPrev}
@@ -168,7 +168,7 @@ function CarouselPrevious({
 
 function CarouselNext({
   className,
-  variant = "outline",
+  variant = "ghost",
   size = "icon",
   ...props
 }) {
@@ -179,7 +179,7 @@ function CarouselNext({
       data-slot="carousel-next"
       variant={variant}
       size={size}
-      className={cn("absolute size-8 rounded-full", orientation === "horizontal"
+      className={cn("absolute size-8 rounded-full hover:bg-muted disabled:hidden", orientation === "horizontal"
         ? "top-1/2 -right-12 -translate-y-1/2"
         : "-bottom-12 left-1/2 -translate-x-1/2 rotate-90", className)}
       disabled={!canScrollNext}

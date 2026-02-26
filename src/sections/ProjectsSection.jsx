@@ -6,7 +6,7 @@ import { projects } from "@/data/projects.js";
 const ProjectsSection = () => {
     return (
         <section>
-            <TitledSection title={"my_projects"}>
+            <TitledSection title={"projects"}>
                 <ProjectsCarousel projects={projects}/>
             </TitledSection>
         </section>
