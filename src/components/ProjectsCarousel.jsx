@@ -10,7 +10,7 @@ import {
 
 const ProjectsCarousel = ({projects}) => {
     return (
-        <Carousel>
+        <Carousel className={"px-2"}>
             <CarouselPrevious/>
             <CarouselContent>
                 {projects.map((project) => (
