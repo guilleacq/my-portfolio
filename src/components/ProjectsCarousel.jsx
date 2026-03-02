@@ -14,7 +14,7 @@ const ProjectsCarousel = ({projects}) => {
             <CarouselPrevious/>
             <CarouselContent>
                 {projects.map((project) => (
-                    <CarouselItem className="sm:basis-full md:basis-1/2" key={project.title}>
+                    <CarouselItem className="sm:basis-full md:basis-1/2 my-2" key={project.title}>
                         <ProjectCard title={project.title} description={project.description} tags={project.tags}/>
                     </CarouselItem>
                 ))}
