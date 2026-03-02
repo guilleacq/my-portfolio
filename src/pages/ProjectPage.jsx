@@ -1,5 +1,7 @@
 import { Navigate, useParams } from "react-router";
 import { projects } from "@/data/projects";
+import HeroSection from "@/sections/HeroSection";
+import ProjectLinksSection from "@/sections/ProjectLinksSection";
 
 const ProjectPage = () => {
     let params = useParams();
@@ -11,9 +13,12 @@ const ProjectPage = () => {
 
     return (
         <>
-            <h1>{project.id}</h1>
-            <p>{project.title}</p>
-            <p>{project.description}</p>
+            <HeroSection
+                title={project.title}
+                description={project.description}
+            />
+
+            <ProjectLinksSection links={project.links}/>
         </>
     );
 }

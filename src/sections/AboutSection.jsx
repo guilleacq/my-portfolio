@@ -1,4 +1,4 @@
-import TitledSection from "../../components/TitledSection";
+import TitledSection from "../components/TitledSection";
 
 const text = `Hi! Thank you for stopping by my little website, I'm Guillermo. 
 I have been into computers ever since I was a little kid`

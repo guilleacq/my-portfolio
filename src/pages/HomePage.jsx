@@ -1,7 +1,7 @@
-import HeroSection from '@/sections/HomePage/HeroSection.jsx'
-import AboutSection from '@/sections/HomePage/AboutSection.jsx'
-import ProjectsSection from '@/sections/HomePage/ProjectsSection.jsx'
-import ContactSection from '@/sections/HomePage/ContactSection.jsx'
+import HeroSection from '@/sections/HeroSection.jsx'
+import AboutSection from '@/sections/AboutSection.jsx'
+import ProjectsSection from '@/sections/ProjectsSection.jsx'
+import ContactSection from '@/sections/ContactSection.jsx'
 import Separator from '@/components/Separator.jsx'
 
 const HomePage = () => {
