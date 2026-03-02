@@ -1,4 +1,4 @@
-import TitledSection from "../components/TitledSection.jsx";
+import TitledSection from "../../components/TitledSection.jsx";
 import ProjectsCarousel from "@/components/ProjectsCarousel.jsx";
 import { projects } from "@/data/projects.js";
 

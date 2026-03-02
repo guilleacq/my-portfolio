@@ -1,5 +1,5 @@
 import { FaGithub, FaLinkedin, FaEnvelope, FaExternalLinkSquareAlt } from 'react-icons/fa';
-import CustomLink from '../components/CustomLink';
+import CustomLink from '../../components/CustomLink';
 
 const links = [
     { text:"mail", href: "mailto:me@gmail.com", icon: <FaEnvelope /> },
