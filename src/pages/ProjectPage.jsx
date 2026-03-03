@@ -3,6 +3,7 @@ import { projects } from "@/data/projects";
 import HeroSection from "@/sections/HeroSection";
 import ProjectTags from "@/components/ProjectTags";
 import ProjectLinks from "@/components/ProjectLinks";
+import GoHomeArrow from "@/components/GoHomeArrow";
 
 const ProjectPage = () => {
     let params = useParams();
@@ -14,6 +15,8 @@ const ProjectPage = () => {
 
     return (
         <>
+            <GoHomeArrow/>
+
             <HeroSection
                 title={project.title}
                 description={project.description}
