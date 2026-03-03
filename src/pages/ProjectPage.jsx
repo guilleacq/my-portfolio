@@ -6,6 +6,7 @@ import ProjectImage from "@/components/ProjectImage";
 import ProjectDataSection from "@/sections/ProjectDataSection";
 import Separator from "@/components/Separator";
 import TitledTextSection from "@/sections/TitledTextSection";
+import NextProjectArrow from "@/components/NextProjectArrow";
 
 const ProjectPage = () => {
     let params = useParams();
@@ -33,7 +34,14 @@ const ProjectPage = () => {
                 <TitledTextSection title={"problem"} text={project.problem}/>
                 <TitledTextSection title={"solution"} text={project.solution}/>
 
+                <Separator/>
 
+
+            </div>
+
+            <div className="flex flex-row justify-between">
+                <GoHomeArrow muted={true}/>
+                <NextProjectArrow muted={false}/>
             </div>
 
         </>

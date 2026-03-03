@@ -11,15 +11,15 @@ import {
 const ProjectsCarousel = ({projects}) => {
     return (
         <Carousel className={"pr-2"}>
-            <CarouselPrevious className={"hidden sm:block"}/>
+            <CarouselPrevious className={"hidden md:inline-flex"}/>
             <CarouselContent>
                 {projects.map((project) => (
-                    <CarouselItem className="basis-[85%] sm:basis-1/2 my-2" key={project.title}>
+                    <CarouselItem className="basis-[85%] sm:basis-1/2 md:basis-1/3 my-2" key={project.title}>
                         <ProjectCard project={project}/>
                     </CarouselItem>
                 ))}
             </CarouselContent>
-            <CarouselNext className={"hidden sm:block"}/>
+            <CarouselNext className={"hidden md:inline-flex"}/>
         </Carousel>
     )
 };
