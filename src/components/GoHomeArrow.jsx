@@ -6,7 +6,7 @@ const GoHomeArrow = () => {
         <>
             <Link to="/" className="flex flex-row items-center gap-2 w-fit p-2 decoration-accent hover:underline" aria-label={`Go home`}>
                 <FaArrowLeft className="text-accent text-xs"/>
-                <p className="text-xs text-accent">back</p>
+                <span className="text-sm text-accent leading-none">back</span>
             </Link>
         </>
     );
