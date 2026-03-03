@@ -4,6 +4,7 @@ import HeroSection from "@/sections/HeroSection";
 import ProjectTags from "@/components/ProjectTags";
 import ProjectLinks from "@/components/ProjectLinks";
 import GoHomeArrow from "@/components/GoHomeArrow";
+import ProjectImage from "@/components/ProjectImage";
 
 const ProjectPage = () => {
     let params = useParams();
@@ -30,8 +31,9 @@ const ProjectPage = () => {
                 <div className="flex flex-row gap-2">
                     <ProjectTags tags={project.tags} className="text-primary text-xs px-3 py-1"/>
                 </div>
-                
             </div>
+
+            <ProjectImage image={project.image}/>
         </>
     );
 }
