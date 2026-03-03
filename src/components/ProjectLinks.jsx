@@ -7,12 +7,12 @@ const linkIcons = {
     default: <FaExternalLinkAlt/>
 }
 
-const ProjectLinksSection = ({links}) => {
+const ProjectLinks = ({links}) => {
     if (links == null)
         return;
 
     return (
-        <section className="flex flex-row items-center gap-4">
+        <div className="flex flex-row items-center gap-4">
             {links.map((link) => (
                 <CustomLink 
                     key={link.type}    
@@ -21,8 +21,8 @@ const ProjectLinksSection = ({links}) => {
                     href={link.url}
                 />
             ))}
-        </section>
+        </div>
     );
 }
 
-export default ProjectLinksSection;
+export default ProjectLinks;

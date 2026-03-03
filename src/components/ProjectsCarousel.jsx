@@ -10,11 +10,11 @@ import {
 
 const ProjectsCarousel = ({projects}) => {
     return (
-        <Carousel className={"px-2"}>
+        <Carousel className={"pr-2"}>
             <CarouselPrevious/>
             <CarouselContent>
                 {projects.map((project) => (
-                    <CarouselItem className="sm:basis-full md:basis-1/2 my-2" key={project.title}>
+                    <CarouselItem className="sm:basis-1/2 my-2" key={project.title}>
                         <ProjectCard project={project}/>
                     </CarouselItem>
                 ))}

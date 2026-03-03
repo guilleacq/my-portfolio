@@ -1,13 +1,11 @@
 import {
     Card,
-    CardAction,
-    CardContent,
     CardDescription,
-    CardFooter,
     CardHeader,
     CardTitle,
   } from "@/components/ui/card";
-import { Badge } from "./ui/badge";
+
+import ProjectTags from "./ProjectTags"; 
 import { Link } from "react-router";
 
 const tagLimit = 4; 
@@ -25,9 +23,7 @@ const ProjectCard = ({project}) => {
             </CardHeader>
 
             <div className="flex gap-2 mx-6 mt-auto">
-                {project.tags.slice(0, tagLimit).map((tag, index) => (
-                    <Badge key={index} variant="outline" className={"text-accent"}>{tag}</Badge>
-                ))}
+                <ProjectTags tags={project.tags} limit={3}/>
             </div>
 
             <Link
@@ -36,7 +32,6 @@ const ProjectCard = ({project}) => {
                 rel="noopener noreferrer"
                 aria-label={`View project: ${project.id}`}
             />
-
         </Card>
     )
 };
