@@ -1,6 +1,6 @@
 import { Badge } from "./ui/badge";
 
-const ProjectTags = ({tags = [], variant = "outline", className = "text-accent", limit = null}) => {
+const ProjectTags = ({tags = [], variant = "outline", className = "text-foreground", limit = null}) => {
 
     const finalTags = (limit == null ? tags : tags.slice(0, limit)); 
 
