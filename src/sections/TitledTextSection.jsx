@@ -1,7 +1,7 @@
 import TitledSection from "@/components/TitledSection";
 
-const TitledTextSection = ({title = "", text = null}) => {
-    if (text == null) {
+const TitledTextSection = ({title, text}) => {
+    if (!title || !text) {
         return null;
     }
 

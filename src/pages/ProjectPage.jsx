@@ -31,7 +31,7 @@ const ProjectPage = () => {
                 <ProjectDataSection links={project.links} tags={project.tags}/>
                 <ProjectImage image={project.image}/>
 
-                <Separator/>
+                {project.image && project.problem && <Separator/>}
 
                 <TitledTextSection title={"problem"} text={project.problem}/>
                 <TitledTextSection title={"solution"} text={project.solution}/>
