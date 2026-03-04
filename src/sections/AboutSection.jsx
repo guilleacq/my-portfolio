@@ -1,14 +1,15 @@
-import TitledSection from "../components/TitledSection";
+import TitledTextSection from "./TitledTextSection";
 
-const text = `Hi! Thank you for stopping by my little website, I'm Guillermo. 
-I have been into computers ever since I was a little kid`
+const text = `I'm Guillermo, a software engineer who cares more about solving the problem than about the tool on the shelf. If I know it, I use it. If I don't, I learn it. What matters is getting it right.
+
+I enjoy building software that makes sense, from understanding the problem to shipping something that works. I'm always learning, always curious, and always looking for the next challenge.
+
+Fluent in English, Italian, and Spanish (and Portuguese coming soon!).`
 
 const AboutSection = () => {
     return (
         <section>
-            <TitledSection title={"about"}>
-                <p className="text-foreground">{text}</p>
-            </TitledSection>
+            <TitledTextSection title={"about"} text={text}/>
         </section>
     );
 }

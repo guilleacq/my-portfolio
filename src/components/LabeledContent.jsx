@@ -1,4 +1,4 @@
-const TitledSection = ({title, children, noPadding = false}) => {
+const LabeledContent = ({title, children, noPadding = false}) => {
     return (
         <div>
             <div className="text-xs text-muted-foreground flex items-center gap-2 font-inter">
@@ -12,4 +12,4 @@ const TitledSection = ({title, children, noPadding = false}) => {
     )
 };
 
-export default TitledSection;
+export default LabeledContent;

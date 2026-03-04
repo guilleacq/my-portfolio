@@ -1,4 +1,4 @@
-import TitledSection from "../components/TitledSection.jsx";
+import LabeledContent from "../components/LabeledContent.jsx";
 import ProjectsCarousel from "@/components/ProjectsCarousel.jsx";
 import { projects } from "@/data/projects.js";
 
@@ -6,9 +6,9 @@ import { projects } from "@/data/projects.js";
 const ProjectsSection = () => {
     return (
         <section>
-            <TitledSection title={"projects"} noPadding={true}>
+            <LabeledContent title={"projects"} noPadding={true}>
                 <ProjectsCarousel projects={projects}/>
-            </TitledSection>
+            </LabeledContent>
         </section>
     );
 }
