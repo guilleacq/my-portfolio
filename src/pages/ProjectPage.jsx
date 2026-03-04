@@ -11,6 +11,7 @@ import NextProjectArrow from "@/components/NextProjectArrow";
 const ProjectPage = () => {
     let params = useParams();
     const project = projects.find(p => p.id === params.id);
+    const projectIndex = projects.findIndex(p => p.id === params.id);
 
     if (project == null) {
         return (<Navigate to="/"/>);
@@ -41,7 +42,7 @@ const ProjectPage = () => {
 
             <div className="flex flex-row justify-between">
                 <GoHomeArrow muted={true}/>
-                <NextProjectArrow muted={false}/>
+                {projectIndex < projects.length - 1 && <NextProjectArrow to={'/project/'+projects[projectIndex + 1].id} muted={false}/>}
             </div>
 
         </>

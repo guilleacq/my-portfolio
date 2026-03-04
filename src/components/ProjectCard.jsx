@@ -29,7 +29,6 @@ const ProjectCard = ({project}) => {
             <Link
                 to={"/project/" + project.id} 
                 className="absolute inset-0 rounded-xl" 
-                rel="noopener noreferrer"
                 aria-label={`View project: ${project.id}`}
             />
         </Card>
