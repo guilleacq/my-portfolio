@@ -10,7 +10,7 @@ const links = [
 
 const ContactSection = () => {
     return (
-        <section className="flex flex-row items-center gap-4">
+        <section className="flex flex-row items-center gap-4 flex-wrap">
             {links.map(link => (
                 <CustomLink key={link.href} icon={link.icon} text={link.text} href={link.href} />
             ))}

@@ -22,14 +22,13 @@ const ProjectCard = ({project}) => {
                 <CardDescription className="mt-2 line-clamp-3">{project.description}</CardDescription>
             </CardHeader>
 
-            <div className="flex gap-2 mx-6 mt-auto">
+            <div className="mx-6 mt-auto">
                 <ProjectTags tags={project.tags} limit={3}/>
             </div>
 
             <Link
                 to={"/project/" + project.id} 
                 className="absolute inset-0 rounded-xl" 
-                rel="noopener noreferrer"
                 aria-label={`View project: ${project.id}`}
             />
         </Card>
