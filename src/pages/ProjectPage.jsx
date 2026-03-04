@@ -10,10 +10,11 @@ import NextProjectArrow from "@/components/NextProjectArrow";
 
 const ProjectPage = () => {
     let params = useParams();
-    const project = projects.find(p => p.id === params.id);
-    const projectIndex = projects.findIndex(p => p.id === params.id);
 
-    if (project == null) {
+    const projectIndex = projects.findIndex(p => p.id === params.id);
+    const project = projects[projectIndex];
+
+    if (projectIndex === -1) {
         return (<Navigate to="/"/>);
     }
 

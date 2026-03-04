@@ -3,8 +3,8 @@ import { Link } from "react-router";
 
 const NextProjectArrow = ({to = null, muted = false}) => {
 
-    if (to == null)
-        return;
+    if (to === null)
+        return null;
 
     return (
         <>
