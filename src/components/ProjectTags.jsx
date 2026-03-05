@@ -5,7 +5,7 @@ const ProjectTags = ({tags = [], variant = "outline", className = "text-foregrou
     const finalTags = (limit == null ? tags : tags.slice(0, limit)); 
 
     return (
-        <div className="flex flex-row gap-2">
+        <div className="flex flex-row gap-2 lowercase">
             {finalTags.map((tag, index) => (
                 <Badge 
                     key={index} 
