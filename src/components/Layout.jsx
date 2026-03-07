@@ -1,8 +1,10 @@
 import { Outlet } from "react-router";
+import ScrollToTop from "./ScrollToTop";
 
 const Layout = () => {
   return (
     <div>
+        <ScrollToTop />
         <main className="flex flex-col gap-6">
             <Outlet />
         </main>
