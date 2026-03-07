@@ -5,7 +5,7 @@ export const projects = [
         description: "A minimalist personal portfolio website built with React and Tailwind CSS, designed to showcase projects and provide easy access to contact links and blog content.",
         tags: ["react", "tailwind", "shadcn/ui", "frontend"],
         links: [
-            { type: "demo", url: "https://www.guillermoacq.com" },
+            { type: "demo", url: "https://www.guilleacq.com" },
             { type: "github", url: "https://github.com/guilleacq/my-portfolio" },
             
         ],
