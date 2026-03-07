@@ -2,10 +2,10 @@ import { FaGithub, FaLinkedin, FaEnvelope, FaExternalLinkSquareAlt } from 'react
 import CustomLink from '../components/CustomLink';
 
 const links = [
-    { text:"mail", href: "mailto:me@gmail.com", icon: <FaEnvelope /> },
-    { text:"github", href: "https://github.com/test", icon: <FaGithub /> },
-    { text:"linkedin", href: "https://linkedin.com/in/test", icon: <FaLinkedin /> },
-    { text: "blog", href: "https://medium.com", icon: <FaExternalLinkSquareAlt /> },
+    { text:"mail", href: "guillermoacq4@gmail.com", icon: <FaEnvelope /> },
+    { text:"github", href: "https://github.com/guilleacq", icon: <FaGithub /> },
+    { text:"linkedin", href: "https://www.linkedin.com/in/guillermoacq", icon: <FaLinkedin /> },
+    // { text: "blog", href: "https://medium.com", icon: <FaExternalLinkSquareAlt /> }, ----- No blog yet, guys
 ];
 
 const ContactSection = () => {
