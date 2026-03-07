@@ -14,9 +14,9 @@ const ArrowLink = ({ to, text = "", direction = "right", muted = false, classNam
                 `} 
                 aria-label={`Link that takes you to ${text}`}>
 
-                {direction === "left" && <FaArrowLeft className="text-xs"/>}
-                <span className="text-sm leading-none">{text}</span>
-                {direction !== "left" && <FaArrowRight className="text-xs"/>}
+                {direction === "left" && <FaArrowLeft className="text-sm"/>}
+                <span className="text-base leading-none">{text}</span>
+                {direction !== "left" && <FaArrowRight className="text-sm"/>}
             </Link>
         </>
 

@@ -8,7 +8,7 @@ const ProjectDataSection = ({ links = null, tags = null}) => {
 
             {links && tags && <div className="hidden border-l h-6 mx-4 md:block"></div>}
 
-            {tags && <ProjectTags tags={tags} className="text-primary text-xs px-3 py-1" />}
+            {tags && <ProjectTags tags={tags} className="text-primary text-sm px-3 py-1" />}
         </div>
     );
 }
