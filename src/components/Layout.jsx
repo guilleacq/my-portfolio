@@ -9,7 +9,7 @@ const Layout = () => {
             <Outlet />
         </main>
         {/* Empty space for visual spacing */}
-        <div className="h-32" aria-hidden="true" /> 
+        <div className="h-32 md:hidden" aria-hidden="true" /> 
     </div>
   );
 }
