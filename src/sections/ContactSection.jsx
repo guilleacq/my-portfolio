@@ -2,7 +2,7 @@ import { FaGithub, FaLinkedin, FaEnvelope, FaExternalLinkSquareAlt } from 'react
 import CustomLink from '../components/CustomLink';
 
 const links = [
-    { text:"mail", href: "mailto:guillermoacq4@gmail.com", icon: <FaEnvelope /> },
+    { text:"mail", href: "mailto:contacto@guilleacq.com", icon: <FaEnvelope /> },
     { text:"github", href: "https://github.com/guilleacq", icon: <FaGithub /> },
     { text:"linkedin", href: "https://www.linkedin.com/in/guillermoacq", icon: <FaLinkedin /> },
     // { text: "blog", href: "https://medium.com", icon: <FaExternalLinkSquareAlt /> }, ----- No blog yet, guys
