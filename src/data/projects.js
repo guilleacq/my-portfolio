@@ -56,7 +56,7 @@ export const projects = [
         id: "galeria-piovani",
         title: "E-commerce Gallery",
         description: "A custom WordPress-based digital gallery and e-commerce platform built for painter Carlos Piovani, featuring a curated showcase of his artwork, optional shop functionality, and an integrated blog.",
-        tags: ["client", "wordpress", "woocommerce", "freelance", "client-work"],
+        tags: ["wordpress", "ecommerce"],
         links: [
             { type: "demo", url: "https://www.carlospiovani.com" },
         ],

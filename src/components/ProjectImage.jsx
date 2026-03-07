@@ -19,7 +19,7 @@ const ProjectImage = ({ image }) => {
                 onLoad={() => setLoaded(true)}
             />
             {loaded && (
-                <figcaption className="text-xs text-muted-foreground font-inter">
+                <figcaption className="text-sm text-muted-foreground font-inter">
                     {image.description}
                 </figcaption>
             )}
